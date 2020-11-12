@@ -8,7 +8,7 @@ namespace MCNURBS {
 
 std::string HelloWorld ()
 	{
-	return std::string ();//"Hello, world!";
+	return "Hello, world!";
 	}
 
 

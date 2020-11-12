@@ -8,6 +8,14 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MCNURBS_Static", "MCNURBS_Static\MCNURBS_Static.vcxproj", "{F14FBECD-7108-4E9B-A987-4CED29780ABB}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UnitTest_Static", "UnitTest_Static\UnitTest_Static.vcxproj", "{2C7652C5-A53C-44D0-A010-6E99AE978DD9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F14FBECD-7108-4E9B-A987-4CED29780ABB} = {F14FBECD-7108-4E9B-A987-4CED29780ABB}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UnitTest_DLL", "UnitTest_DLL\UnitTest_DLL.vcxproj", "{64792A31-A14B-456F-9744-F4518008FE21}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A49AAD50-C01D-44D1-A382-CB394164E7A8} = {A49AAD50-C01D-44D1-A382-CB394164E7A8}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +49,14 @@ Global
 		{2C7652C5-A53C-44D0-A010-6E99AE978DD9}.Release|x64.Build.0 = Release|x64
 		{2C7652C5-A53C-44D0-A010-6E99AE978DD9}.Release|x86.ActiveCfg = Release|Win32
 		{2C7652C5-A53C-44D0-A010-6E99AE978DD9}.Release|x86.Build.0 = Release|Win32
+		{64792A31-A14B-456F-9744-F4518008FE21}.Debug|x64.ActiveCfg = Debug|x64
+		{64792A31-A14B-456F-9744-F4518008FE21}.Debug|x64.Build.0 = Debug|x64
+		{64792A31-A14B-456F-9744-F4518008FE21}.Debug|x86.ActiveCfg = Debug|Win32
+		{64792A31-A14B-456F-9744-F4518008FE21}.Debug|x86.Build.0 = Debug|Win32
+		{64792A31-A14B-456F-9744-F4518008FE21}.Release|x64.ActiveCfg = Release|x64
+		{64792A31-A14B-456F-9744-F4518008FE21}.Release|x64.Build.0 = Release|x64
+		{64792A31-A14B-456F-9744-F4518008FE21}.Release|x86.ActiveCfg = Release|Win32
+		{64792A31-A14B-456F-9744-F4518008FE21}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
