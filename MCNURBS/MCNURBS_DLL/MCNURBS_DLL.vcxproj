@@ -151,9 +151,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\DefineMCNURBSDLL_API.h" />
     <ClInclude Include="..\framework.h" />
     <ClInclude Include="..\HelloWorld.h" />
     <ClInclude Include="..\pch.h" />
+    <ClInclude Include="..\Vector.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\dllmain.cpp" />
