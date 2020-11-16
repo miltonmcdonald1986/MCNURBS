@@ -12,6 +12,12 @@ Vector::Vector (const std::initializer_list<double> &components)
 	}
 
 
+Vector::Vector (const std::vector<double> &components)
+	: components (components)
+	{
+	}
+
+
 auto Vector::GetComponents () const -> std::vector<double>
 	{
 	return this->components;
@@ -36,6 +42,12 @@ auto Vector::operator[](size_t i)->double &
 	}
 
 
+auto ZeroVector (size_t dimension) -> Vector
+	{
+	return Vector (std::vector<double> (dimension, 0.));
+	}
+
+
 auto operator==(const Vector &v0, const Vector &v1) -> bool
 	{
 	return v0.GetComponents () == v1.GetComponents ();
@@ -51,6 +63,12 @@ auto operator*(double c, const Vector &v) -> Vector
 		}
 
 	return cv;
+	}
+
+
+auto operator*(const Vector &v, double c) -> Vector
+	{
+	return c * v;
 	}
 
 
