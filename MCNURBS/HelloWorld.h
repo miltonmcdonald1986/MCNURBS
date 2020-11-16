@@ -9,7 +9,7 @@
 namespace MCNURBS {
 
 
-MCNURBSDLL_API std::string HelloWorld ();
+MCNURBSDLL_API auto HelloWorld ()->std::string;
 
 
 }

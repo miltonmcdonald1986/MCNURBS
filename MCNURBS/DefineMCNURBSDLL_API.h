@@ -8,5 +8,5 @@
 		#define MCNURBSDLL_API __declspec(dllimport)
 	#endif
 #else
-	#define MCNURBSDLL_API ;
+	#define MCNURBSDLL_API /* nothing */
 #endif

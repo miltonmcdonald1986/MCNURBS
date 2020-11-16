@@ -6,7 +6,7 @@
 namespace MCNURBS {
 
 
-std::string HelloWorld ()
+auto HelloWorld ()->std::string
 	{
 	return "Hello, world!";
 	}
