@@ -151,6 +151,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\BezierCurve.h" />
     <ClInclude Include="..\DefineMCNURBSDLL_API.h" />
     <ClInclude Include="..\framework.h" />
     <ClInclude Include="..\HelloWorld.h" />
@@ -159,6 +160,7 @@
     <ClInclude Include="..\Vector.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\BezierCurve.cpp" />
     <ClCompile Include="..\HelloWorld.cpp" />
     <ClCompile Include="..\pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>

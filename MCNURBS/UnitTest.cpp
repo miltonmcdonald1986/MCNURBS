@@ -2,6 +2,7 @@
 #include "CppUnitTest.h"
 
 #include "HelloWorld.h"
+#include "BezierCurve.h"
 #include "PowerBasisCurve.h"
 #include "Vector.h"
 
@@ -41,7 +42,7 @@ TEST_CLASS (MCNURBS_Vector)
 			Assert::IsTrue (u.GetSize () == 3);
 			Assert::IsTrue (u == v);
 			Assert::IsTrue (u.GetComponents () == std::vector<double> ({ -1., 3., 1. }));
-			Assert::IsTrue (w == MCNURBS::Vector (std::vector<double>(4, 0.)));
+			Assert::IsTrue (w == MCNURBS::Vector (std::vector<double> (4, 0.)));
 			}
 
 		TEST_METHOD (ScalarTimesVector)
@@ -89,6 +90,24 @@ TEST_CLASS (MCNURBS_PowerBasisCurve)
 			Assert::IsTrue (C (0.25) == MCNURBS::Vector ({ 4.875 }));
 			Assert::IsTrue (C (0.5) == MCNURBS::Vector ({ 6. }));
 			Assert::IsTrue (C (1.) == a0 + a1 + a2);
+			}
+	};
+
+
+TEST_CLASS (MCNURBS_BezierCurve)
+	{
+	public:
+
+		TEST_METHOD (ComputePointOnBezierCurve)
+			{
+			MCNURBS::Vector P0 ({ 0., 0. });
+			MCNURBS::Vector P1 ({ 1., 0. });
+			MCNURBS::Vector P2 ({ 1., 1. });
+			MCNURBS::Vector P3 ({ 0., 1. });
+			MCNURBS::BezierCurve C ({ P0, P1, P2, P3 });
+			Assert::IsTrue (C (0.) == P0);
+			Assert::IsTrue (C (0.5) == MCNURBS::Vector ({ 0.75, 0.5 }));
+			Assert::IsTrue (C (1.) == P3);
 			}
 	};
 

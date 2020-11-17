@@ -33,6 +33,9 @@
     <ClInclude Include="..\PowerBasisCurve.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\BezierCurve.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\pch.cpp">
@@ -48,6 +51,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\PowerBasisCurve.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BezierCurve.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
